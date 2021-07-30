@@ -1,0 +1,35 @@
+<mvc:View
+    controllerName="test02.controller.Base"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:tnt="sap.tnt"
+>
+
+<tnt:ToolPage id="app">
+    <tnt:header>
+        <tnt:ToolHeader>
+            <tnt:content>
+            <Button text="left Side Button"/>
+            <ToolbarSpacer></ToolbarSpacer>
+            <Label text="Shop Administrator Tool"/>
+            <ToolbarSpacer></ToolbarSpacer>
+            <Button text="Right Side Button" id="sideButton" press="onSideButton"/>
+            </tnt:content>
+        </tnt:ToolHeader>
+    </tnt:header>
+    <tnt:sideContent>
+        <tnt:SideNavigation itemSelect="onItemSelect">
+            <tnt:NavigationList>
+                <tnt:NavigationListItem text="Home" key="Home"></tnt:NavigationListItem>
+                <tnt:NavigationListItem text="Page1" key="Page1"></tnt:NavigationListItem>
+                <tnt:NavigationListItem text="Page2" key="Page2"></tnt:NavigationListItem>
+            </tnt:NavigationList>
+        </tnt:SideNavigation>
+    </tnt:sideContent>
+    <tnt:mainContents>
+        <App id="myPage"/>
+    </tnt:mainContents>
+</tnt:ToolPage>
+
+</mvc:View>

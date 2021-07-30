@@ -1,0 +1,12 @@
+<mvc:View
+    controllerName="test02.controller.Button"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:tnt="sap.tnt"
+>
+    <Page title="Button" id="button">
+        <content></content>
+    </Page>
+
+</mvc:View>
